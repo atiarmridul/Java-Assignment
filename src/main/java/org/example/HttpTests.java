@@ -12,22 +12,22 @@ public class HttpTests {
         // Define base URI
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
-        // Send GET request
+
         Response response = RestAssured.get("/posts/1");
 
-        // Verify status code
+
         Assert.assertEquals(response.getStatusCode(), 200);
 
-        // Verify response body
+
         Assert.assertTrue(response.getBody().asString().contains("userId"));
     }
 
     @Test
     public void testPostRequest() {
-        // Define base URI
+
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
-        // Send POST request
+
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
@@ -35,16 +35,16 @@ public class HttpTests {
                 .when()
                 .post("/posts");
 
-        // Verify status code
+
         Assert.assertEquals(response.getStatusCode(), 201);
     }
 
     @Test
     public void testPutRequest() {
-        // Define base URI
+
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
-        // Send PUT request
+
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
@@ -52,7 +52,7 @@ public class HttpTests {
                 .when()
                 .put("/posts/1");
 
-        // Verify status code
+
         Assert.assertEquals(response.getStatusCode(), 200);
     }
 }
