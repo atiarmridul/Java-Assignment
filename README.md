@@ -3,7 +3,7 @@
 
 A simple task containing HTTP method testing, API error handling & content validation.
 
-## 🛠 Technology Used
+## Technology Used
 **Programming Language:** JAVA
 
 **Build Tool:** Maven
