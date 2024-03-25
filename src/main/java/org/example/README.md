@@ -1,16 +1,20 @@
-package org.example;
-import org.testng.Assert;
-import org.testng.annotations.Test;
-import io.restassured.RestAssured;
-import io.restassured.response.Response;
-import static io.restassured.RestAssured.*;
 
-public class HttpTests {
+# CHEQ Assignment
 
-    @Test
+A simple task containing HTTP method testing, API error handling & content validation.
+
+
+## Project Summary
+
+I have executed 4 simple tests, they are following:
+
+- testGetRequestSuccess:
+  Sends a GET request to retrieve a specific resource and asserts that the response status code is 200 and that the response body contains a specific string.
+
+```bash
     public void testGetRequest() {
-
-        // Define base URI
+        
+       // Define base URI
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
         // Send GET request
@@ -23,8 +27,13 @@ public class HttpTests {
         Assert.assertTrue(response.getBody().asString().contains("userId"));
 
     }
+```
 
-    @Test
+
+- testGetRequestNotFound:
+  Sends a GET request to retrieve a resource that does not exist and asserts that the response status code is 404 (Not Found).
+
+```bash
     public void testGetRequestNotFound() {
 
         // Define base URI
@@ -37,9 +46,16 @@ public class HttpTests {
         Assert.assertEquals(response.getStatusCode(), 404);
     }
 
-    @Test
+```
+
+
+- testPostRequest:
+  Sends a POST request to create a new resource and asserts that the response status code is 201 (Created).
+
+```bash
     public void testPostRequest() {
 
+    
         // Define base URI
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
@@ -55,7 +71,13 @@ public class HttpTests {
         Assert.assertEquals(response.getStatusCode(), 201);
 
     }
-    @Test
+
+```
+
+- testPutRequest:
+  Sends a PUT request to update an existing resource and asserts that the response status code is 200 (OK).
+
+```bash
     public void testPutRequest() {
         // Define base URI
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
@@ -72,5 +94,20 @@ public class HttpTests {
         Assert.assertEquals(response.getStatusCode(), 200);
     }
 
-}
+```
 
+
+
+## 🛠 Technology Used
+**Programming Language:** JAVA
+
+**Build Tool:** Maven
+
+**IDE:** IntelliJ IDEA
+
+
+## Prerequisite
+Must have following dependencies in your Maven build file.
+
+- TestNG
+- Rest Assured 
