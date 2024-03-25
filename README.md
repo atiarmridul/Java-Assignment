@@ -22,7 +22,7 @@ Must have following dependencies in your Maven build file.
 
 I have executed 4 simple tests, they are following:
 
-- testGetRequestSuccess: 
+- **testGetRequestSuccess:** 
 Sends a GET request to retrieve a specific resource and asserts that the response status code is 200 and that the response body contains a specific string.
 
 ```bash
@@ -44,7 +44,7 @@ Sends a GET request to retrieve a specific resource and asserts that the respons
 ```
 
 
-- testGetRequestNotFound:
+- **testGetRequestNotFound:**
 Sends a GET request to retrieve a resource that does not exist and asserts that the response status code is 404 (Not Found).
 
 ```bash
@@ -63,7 +63,7 @@ Sends a GET request to retrieve a resource that does not exist and asserts that 
 ```
 
 
-- testPostRequest:
+- **testPostRequest:**
 Sends a POST request to create a new resource and asserts that the response status code is 201 (Created).
 
 ```bash
@@ -88,7 +88,7 @@ Sends a POST request to create a new resource and asserts that the response stat
 
 ```
 
-- testPutRequest: 
+- **testPutRequest:**
 Sends a PUT request to update an existing resource and asserts that the response status code is 200 (OK).
 
 ```bash
