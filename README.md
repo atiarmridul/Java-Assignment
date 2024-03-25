@@ -3,6 +3,20 @@
 
 A simple task containing HTTP method testing, API error handling & content validation.
 
+## 🛠 Technology Used
+**Programming Language:** JAVA
+
+**Build Tool:** Maven
+
+**IDE:** IntelliJ IDEA
+
+
+## Prerequisite
+Must have following dependencies in your Maven build file. 
+    
+ - TestNG
+ - Rest Assured 
+
 
 ## Project Summary
 
@@ -98,16 +112,4 @@ Sends a PUT request to update an existing resource and asserts that the response
 
 
 
-## 🛠 Technology Used
-**Programming Language:** JAVA
 
-**Build Tool:** Maven
-
-**IDE:** IntelliJ IDEA
-
-
-## Prerequisite
-Must have following dependencies in your Maven build file. 
-    
- - TestNG
- - Rest Assured 
