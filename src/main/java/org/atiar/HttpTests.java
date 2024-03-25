@@ -1,4 +1,4 @@
-package org.example;
+package org.atiar;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import io.restassured.RestAssured;
