@@ -10,7 +10,7 @@ public class HttpTests {
     @Test
     public void testGetRequest() {
 
-        // Define base URI
+        // Define base url
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
         // Send GET request
@@ -27,7 +27,7 @@ public class HttpTests {
     @Test
     public void testGetRequestNotFound() {
 
-        // Define base URI
+        // Define base url
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
         // Send GET request to a non-existent resource
@@ -40,7 +40,7 @@ public class HttpTests {
     @Test
     public void testPostRequest() {
 
-        // Define base URI
+        // Define base url
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
         // Send PUT request
@@ -57,7 +57,8 @@ public class HttpTests {
     }
     @Test
     public void testPutRequest() {
-        // Define base URI
+
+        // Define base url
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
         // Send PUT request
