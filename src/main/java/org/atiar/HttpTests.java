@@ -43,11 +43,11 @@ public class HttpTests {
         // Define base url
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
-        // Send PUT request
+        // Send a POST request
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
-                .body("{ \"title\": \"foo\", \"body\": \"bar\", \"userId\": 1 }")
+                .body("{ \"title\": \"Md. Atiar\", \"body\": \"bar\", \"userId\": 1 }")
                 .when()
                 .post("/posts");
 
@@ -61,11 +61,11 @@ public class HttpTests {
         // Define base url
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
-        // Send PUT request
+        // Send a PUT request
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
-                .body("{ \"id\": 1, \"title\": \"foo\", \"body\": \"bar\", \"userId\": 1 }")
+                .body("{ \"id\": 1, \"title\": \"Mridul\", \"body\": \"bar\", \"userId\": 1 }")
                 .when()
                 .put("/posts/1");
 
