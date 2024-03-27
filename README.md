@@ -73,11 +73,11 @@ Sends a POST request to create a new resource and asserts that the response stat
         // Define base URI
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
-        // Send PUT request
+        // Send POST request
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
-                .body("{ \"title\": \"foo\", \"body\": \"bar\", \"userId\": 1 }")
+                .body("{ \"title\": \"Md.Atiar\", \"body\": \"bar\", \"userId\": 1 }")
                 .when()
                 .post("/posts");
 
@@ -100,7 +100,7 @@ Sends a PUT request to update an existing resource and asserts that the response
         Response response = given()
                 .header("Content-type", "application/json")
                 .and()
-                .body("{ \"id\": 1, \"title\": \"foo\", \"body\": \"bar\", \"userId\": 1 }")
+                .body("{ \"id\": 1, \"title\": \"Mridul\", \"body\": \"bar\", \"userId\": 1 }")
                 .when()
                 .put("/posts/1");
 
