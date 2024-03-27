@@ -12,7 +12,7 @@ A simple task containing HTTP method testing, API error handling & content valid
 
 
 ## Prerequisite
-Must have following dependencies in your Maven build file. 
+Must have the following dependencies in the Maven build file. 
     
  - TestNG
  - Rest Assured 
@@ -53,7 +53,7 @@ Sends a GET request to retrieve a resource that does not exist and asserts that 
         // Define base URI
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
 
-        // Send GET request to a non-existent resource
+        // Send a GET request to a non-existent resource
         Response response = RestAssured.get("/posts/1000");
 
         // Verify status code for resource not found
