@@ -1,5 +1,5 @@
 
-# CHEQ Assignment
+# JAVA assignment
 
 A simple task containing HTTP method testing, API error handling & content validation.
 
