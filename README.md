@@ -1,31 +1,30 @@
-
-# JAVA assignment
+# JAVA Practice - REST Assured 
 
 A simple task containing HTTP method testing, API error handling & content validation.
 
 ## Technology Used
+
 **Programming Language:** JAVA
 
 **Build Tool:** Maven
 
 **IDE:** IntelliJ IDEA
 
-
 ## Prerequisite
-Must have the following dependencies in the Maven build file. 
-    
- - TestNG
- - Rest Assured 
 
+Must have the following dependencies in the Maven build file.
+
+- TestNG
+- Rest Assured
 
 ## Project Summary
 
 I have executed 4 simple tests, they are following:
 
-- **testGetRequestSuccess:** 
-Sends a GET request to retrieve a specific resource and asserts that the response status code is 200 and that the response body contains a specific string.
+- **testGetRequestSuccess:**
+   Sends a GET request to retrieve a specific resource and asserts that the response status code is 200 and that the response body contains a specific string.
 
-```bash
+```bash {"id":"01J785Q34DDJ74TAK0W3P25YW7"}
     public void testGetRequest() {
         
        // Define base URI
@@ -41,13 +40,13 @@ Sends a GET request to retrieve a specific resource and asserts that the respons
         Assert.assertTrue(response.getBody().asString().contains("userId"));
 
     }
+
 ```
 
-
 - **testGetRequestNotFound:**
-Sends a GET request to retrieve a resource that does not exist and asserts that the response status code is 404 (Not Found).
+   Sends a GET request to retrieve a resource that does not exist and asserts that the response status code is 404 (Not Found).
 
-```bash
+```bash {"id":"01J785Q34DDJ74TAK0W61BNWC6"}
     public void testGetRequestNotFound() {
 
         // Define base URI
@@ -60,13 +59,13 @@ Sends a GET request to retrieve a resource that does not exist and asserts that 
         Assert.assertEquals(response.getStatusCode(), 404);
     }
 
+
 ```
 
-
 - **testPostRequest:**
-Sends a POST request to create a new resource and asserts that the response status code is 201 (Created).
+   Sends a POST request to create a new resource and asserts that the response status code is 201 (Created).
 
-```bash
+```bash {"id":"01J785Q34DDJ74TAK0W6484P0N"}
     public void testPostRequest() {
 
     
@@ -86,12 +85,13 @@ Sends a POST request to create a new resource and asserts that the response stat
 
     }
 
+
 ```
 
 - **testPutRequest:**
-Sends a PUT request to update an existing resource and asserts that the response status code is 200 (OK).
+   Sends a PUT request to update an existing resource and asserts that the response status code is 200 (OK).
 
-```bash
+```bash {"id":"01J785Q34DDJ74TAK0W79XSPE8"}
     public void testPutRequest() {
         // Define base URI
         RestAssured.baseURI = "https://jsonplaceholder.typicode.com";
@@ -107,6 +107,7 @@ Sends a PUT request to update an existing resource and asserts that the response
         // Verify status code
         Assert.assertEquals(response.getStatusCode(), 200);
     }
+
 
 ```
 
